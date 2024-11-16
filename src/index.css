@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 15px;
+    height: 20px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #f7f4ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #e0cbcb;
+    border-radius: 100vh;
+    border: 3px solid #f6f7ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c0a0b9;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .order-confirmation-modal .ReactModal__Content--after-open {
+    width: 370px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .order-confirmation-modal .ReactModal__Content--after-open {
+    width: 550px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .order-confirmation-modal .ReactModal__Content--after-open {
+    width: 600px;
+  }
+}
