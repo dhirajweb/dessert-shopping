@@ -18,7 +18,7 @@ const Card = ({ product }) => {
   }, [cart]);
 
   return (
-    <li className="flex justify-center flex-col mt-8 col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-4 2xl:col-span-3">
+    <li className="flex justify-center flex-col mt-8 col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-4">
       <div
         className={`relative w-full mb-8 rounded-md ${
           productQtyInCart > 0 ? 'border-[3px] border-[#c7390e]' : ''
@@ -30,9 +30,9 @@ const Card = ({ product }) => {
           <img
             src={product.image.desktop}
             alt={product.name}
-            width="100%"
+            width={300}
             height={200}
-            className="rounded-md"
+            className="rounded-md w-full"
           />
         </picture>
         {productQtyInCart ? (

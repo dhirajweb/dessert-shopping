@@ -30,6 +30,7 @@ const Cart = () => {
           <img
             src="./assets/images/illustration-empty-cart.svg"
             alt="empty cart"
+            width={150}
             className="w-[150px]"
           />
           <p className="text-md lg:text-xl font-semibold text-[#ad8984]">
