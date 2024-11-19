@@ -27,12 +27,12 @@ const SingleCartItem = ({
             <span className="text-[#c7390e] font-bold">
               {product.product_qty}x
             </span>
-            <span className="text-[#c9aea5] font-semibold">
+            <span className="text-[#C0A197] font-semibold">
               <span className="text-sm">@</span>$
               {parseFloat(product.product_price).toFixed(2)}
             </span>
             {!alignPriceOnRight && (
-              <span className="text-[#ad8984] font-bold">
+              <span className="text-[#9a7a75] font-bold">
                 $
                 {parseFloat(
                   product.product_qty * product.product_price
@@ -43,7 +43,10 @@ const SingleCartItem = ({
         </div>
       </div>
       {showRemoveBtn && (
-        <button onClick={() => handleRemoveProduct(product.product_name)}>
+        <button
+          onClick={() => handleRemoveProduct(product.product_name)}
+          aria-label={`Remove ${product.product_name} from cart`}
+        >
           <img
             src="./assets/images/icon-remove-item.svg"
             alt="remove item"

@@ -33,7 +33,7 @@ const Cart = () => {
             width={150}
             className="w-[150px]"
           />
-          <p className="text-md lg:text-xl font-semibold text-[#ad8984]">
+          <p className="text-md lg:text-xl font-semibold text-[#8C6E6A]">
             Your added items will appear here
           </p>
         </div>
@@ -41,10 +41,12 @@ const Cart = () => {
         <>
           <CartItems type="cart" />
           <OrderTotal total={getCartTotal()} />
-          <div className="flex justify-center gap-2 p-4 my-8 bg-[#f4edea] rounded-md">
+          <div className="flex justify-center items-center gap-2 p-4 my-8 bg-[#f4edea] rounded-md">
             <img
               src="./assets/images/icon-carbon-neutral.svg"
               alt="carbon-neutral"
+              width={20}
+              height={20}
             />
             <span className="text-sm">
               This is a <strong>carbon-neutral</strong> delivery
