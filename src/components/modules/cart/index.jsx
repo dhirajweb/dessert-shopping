@@ -21,7 +21,7 @@ const Cart = () => {
   };
 
   return (
-    <div className="bg-white shadow-lg p-4 rounded-md mt-10">
+    <div className="bg-white shadow-lg p-4 rounded-md mt-10 min-h-[300px]">
       <h2 className="text-xl lg:text-3xl text-[#c7390e] font-bold">
         Your Cart ({cart.length})
       </h2>
@@ -31,6 +31,7 @@ const Cart = () => {
             src="./assets/images/illustration-empty-cart.svg"
             alt="empty cart"
             width={150}
+            height={150}
             className="w-[150px]"
           />
           <p className="text-md lg:text-xl font-semibold text-[#8C6E6A]">
